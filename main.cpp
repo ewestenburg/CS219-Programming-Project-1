@@ -24,6 +24,10 @@ int main(int argc, char *argv[]){
         ss >> operate >> std::skipws 
            >> o1 >> std::skipws 
            >> o2;
+
+        /*char * op = new char[operate.length() + 1];
+        std::copy(operate.begin(), operate.end(), op);
+        op[operate.length()] = '\0';*/
         operand1 = static_cast<uint32_t>(std::stoul(o1, nullptr, 16));
         operand2 = static_cast<uint32_t>(std::stoul(o2, nullptr, 16));
         reader.runCommand(operate, operand1, operand2);

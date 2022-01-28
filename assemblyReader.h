@@ -6,7 +6,7 @@
 
 class AssemblyReader {
 private:
-    typedef void(AssemblyReader::*functionPtr)(void);
+    typedef void(AssemblyReader::*functionPtr)(uint32_t, uint32_t);
     std::map<char*, functionPtr> *commandMap;
 
 public:

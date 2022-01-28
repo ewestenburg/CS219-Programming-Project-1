@@ -1,6 +1,7 @@
 #include "assemblyReader.h"
 
 #include <iostream>
+#include <cstring>
 
 AssemblyReader::AssemblyReader(){
     /*commandMap = new std::map<char*, AssemblyReader::functionPtr>;
@@ -8,8 +9,7 @@ AssemblyReader::AssemblyReader(){
 }
 
 void AssemblyReader::runCommand(std::string oper, uint32_t op1, uint32_t op2){
-    /*auto command = ;
-    (this->*(commandMap->find(oper))->second)();*/
+    // (this->*(commandMap->find(oper))->second)(op1, op2);
     if(oper == "ADD"){
         add(op1, op2);
     }
